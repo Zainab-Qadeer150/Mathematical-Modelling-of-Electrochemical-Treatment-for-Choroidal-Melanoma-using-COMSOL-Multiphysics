@@ -131,93 +131,111 @@ where $\(\phi\)$ represents the electric potential.
 
 ### Nernst–Planck Equation
 
-Transport of ionic species is described by the Nernst–Planck formulation, which accounts for **diffusion and electric-field-driven migration**:
+The transport of ionic species is described using the Nernst–Planck equation, which accounts for diffusion and electric-field-driven migration.
 
-$$
-\frac{\partial c_i}{\partial t}+\nabla\cdot\mathbf{N}_i=R_i
-$$
-
-where $\(c_i\)$ is the concentration of species $\(i\)$, $\(\mathbf{N}_i\)$ is its flux, and $\(R_i\)$ represents the corresponding reaction or source term.
-
-The ionic flux can be expressed as:
-
+```math
+\mathbf{N}_i
+=
+-D_i\nabla c_i
+-z_i u_i F c_i\nabla\phi
++c_i\mathbf{v}
 ```
-\mathbf{N}_i=-D_i\nabla c_i-z_i u_i F c_i\nabla\phi+c_i\mathbf{v}
 
-where $D_i$ is the diffusion coefficient, $z_i$ is the ionic charge number, $u_i$ is ionic mobility, $F$ is the Faraday constant, $\phi$ is electric potential, and $\mathbf{v}$ is fluid velocity where applicable.
-```
-###  Fick's Law of Diffusion
+where:
+
+* $D_i$ = diffusion coefficient
+* $z_i$ = ionic charge number
+* $u_i$ = ionic mobility
+* $F$ = Faraday constant
+* $c_i$ = concentration of species $i$
+* $\phi$ = electric potential
+* $\mathbf{v}$ = fluid velocity, where applicable
+
+The Nernst–Planck formulation describes the transport of charged species under the combined effects of **diffusion and electric-field-driven migration**.
+
+---
+
+### Fick's Law of Diffusion
 
 The diffusive component of species transport is described by Fick's law:
 
-$$
-\mathbf{N}_{i,\mathrm{diff}}=-D_i\nabla c_i
-$$
+```math
+\mathbf{N}_{i,\mathrm{diff}}
+=
+-D_i\nabla c_i
+```
 
 The negative sign indicates that diffusion occurs from regions of higher concentration toward regions of lower concentration.
 
-Diffusion contributes to the redistribution of electrochemically generated species and influences the resulting concentration and pH gradients.
+In this model, diffusion contributes to the redistribution of electrochemically generated species and influences the spatial development of concentration and pH gradients.
 
 ---
 
 ### Butler–Volmer Electrode Kinetics
 
-Butler–Volmer Electrode Kinetics
+Electrochemical reactions at the electrode–electrolyte interfaces are described using Butler–Volmer electrode kinetics:
 
-Electrochemical reactions at the electrode–electrolyte interfaces are described using Butler–Volmer kinetics:
-
-i=i_0\left[
+```math
+i
+=
+i_0
+\left[
 \exp\left(\frac{\alpha_a F\eta}{RT}\right)
 -
 \exp\left(-\frac{\alpha_c F\eta}{RT}\right)
 \right]
+```
 
 where:
 
-$i$ = electrode current density
-$i_0$ = exchange current density
-$\eta$ = overpotential
-$\alpha_a,\alpha_c$ = anodic and cathodic charge-transfer coefficients
-$F$ = Faraday constant
-$R$ = universal gas constant
-$T$ = absolute temperature
+* $i$ = electrode current density
+* $i_0$ = exchange current density
+* $\eta$ = overpotential
+* $\alpha_a$ = anodic charge-transfer coefficient
+* $\alpha_c$ = cathodic charge-transfer coefficient
+* $F$ = Faraday constant
+* $R$ = universal gas constant
+* $T$ = absolute temperature
 
-This formulation describes the rate of electrochemical reactions occurring at the electrode interfaces.
+This formulation describes the rate of electrochemical reactions occurring at the electrode–electrolyte interfaces.
 
 ---
 
 ### Faraday's Law
 
-Faraday's law relates the electrical charge transferred to the amount of chemical species produced or consumed:
+Faraday's law relates the electrical charge transferred during an electrochemical reaction to the amount of chemical species produced or consumed:
 
-$$
-n=\frac{It}{zF}
-$$
+```math
+n
+=
+\frac{It}{zF}
+```
 
 where:
 
-* $\(n\)$ = amount of substance
-* $\(I\)$ = electric current
-* $\(t\)$ = treatment time
-* $\(z\)$ = number of electrons transferred
-* $\(F\)$ = Faraday constant
+* $n$ = amount of substance produced or consumed
+* $I$ = electric current
+* $t$ = treatment time
+* $z$ = number of electrons transferred
+* $F$ = Faraday constant
 
-This provides a quantitative connection between the applied electrical treatment and electrochemical species generation.
+This relationship provides a quantitative connection between the applied electrical treatment and electrochemical species generation.
 
 ---
 
-###  pH Calculation
+### pH Calculation
 
 The local pH is calculated from the hydrogen-ion concentration:
 
-$$
-\mathrm{pH}=-\log_{10}[H^+]
-$$
+```math
+\mathrm{pH}
+=
+-\log_{10}[H^+]
+```
 
-where $\([H^+]\)$ represents the hydrogen-ion concentration.
+where $[H^+]$ represents the hydrogen-ion concentration.
 
-The resulting pH distribution provides a quantitative measure of the treatment-induced acidic or alkaline environment.
+Changes in hydrogen-ion concentration lead to local variations in pH during electrochemical treatment. Therefore, the pH distribution provides an important quantitative measure of the treatment-induced acidic or alkaline environment.
 
 ---
-
 
