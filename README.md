@@ -99,7 +99,7 @@ $$
 \nabla \cdot \mathbf{J} = 0
 $$
 
-where $\(\mathbf{J}\)$ is the current-density vector.
+where $\mathbf{J}$ is the current-density vector.
 
 This equation governs the conservation of electric charge within the computational domain and determines the resulting current distribution.
 
@@ -128,7 +128,17 @@ $$
 where $\(\phi\)$ represents the electric potential.
 
 ---
+### Species Conservation
 
+The transport and evolution of each ionic species are governed by the species conservation equation:
+
+```math
+\frac{\partial c_i}{\partial t}
++
+\nabla \cdot \mathbf{N}_i
+=
+R_i
+---
 ### Nernst–Planck Equation
 
 The transport of ionic species is described using the Nernst–Planck equation, which accounts for diffusion and electric-field-driven migration.
@@ -138,7 +148,6 @@ The transport of ionic species is described using the Nernst–Planck equation, 
 =
 -D_i\nabla c_i
 -z_i u_i F c_i\nabla\phi
-+c_i\mathbf{v}
 ```
 
 where:
@@ -147,9 +156,7 @@ where:
 * $z_i$ = ionic charge number
 * $u_i$ = ionic mobility
 * $F$ = Faraday constant
-* $c_i$ = concentration of species $i$
 * $\phi$ = electric potential
-* $\mathbf{v}$ = fluid velocity, where applicable
 
 The Nernst–Planck formulation describes the transport of charged species under the combined effects of **diffusion and electric-field-driven migration**.
 
