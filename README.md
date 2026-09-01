@@ -138,7 +138,18 @@ The transport and evolution of each ionic species are governed by the species co
 \nabla \cdot \mathbf{N}_i
 =
 R_i
+```
+
+where:
+
+- $c_i$ = concentration of species $i$
+- $\mathbf{N}_i$ = molar flux of species $i$
+- $R_i$ = reaction or source term
+
+This equation describes the change in ionic-species concentration due to transport and electrochemical reactions.
+
 ---
+
 ### Nernst–Planck Equation
 
 The transport of ionic species is described using the Nernst–Planck equation, which accounts for diffusion and electric-field-driven migration.
@@ -152,15 +163,13 @@ The transport of ionic species is described using the Nernst–Planck equation, 
 
 where:
 
-* $D_i$ = diffusion coefficient
-* $z_i$ = ionic charge number
-* $u_i$ = ionic mobility
-* $F$ = Faraday constant
-* $\phi$ = electric potential
+- $D_i$ = diffusion coefficient
+- $z_i$ = ionic charge number
+- $u_i$ = ionic mobility
+- $F$ = Faraday constant
+- $\phi$ = electric potential
 
 The Nernst–Planck formulation describes the transport of charged species under the combined effects of **diffusion and electric-field-driven migration**.
-
----
 
 ### Fick's Law of Diffusion
 
