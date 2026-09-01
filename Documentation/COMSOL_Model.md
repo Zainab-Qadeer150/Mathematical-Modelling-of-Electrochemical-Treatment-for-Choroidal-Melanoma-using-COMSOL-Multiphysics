@@ -26,7 +26,7 @@ The computational domain represents the relevant ocular environment, including t
 
 The choroidal melanoma is represented as a localized tumor domain in the posterior region of the modeled eye. The electrode configuration is incorporated into the geometry to represent the applied electrochemical treatment.
 
-Figures/Computational Geometry.png
+Figures/Computational Geometry.png!
 
 **Figure 1.** Two-dimensional computational geometry showing the modeled ocular environment, tumor region, and electrode configuration.
 
