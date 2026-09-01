@@ -148,7 +148,6 @@ $$
 -z_i u_i F c_i\nabla\phi
 +c_i\mathbf{v}
 $$
-
 where $\(D_i\)$ is the diffusion coefficient, $\(z_i\)$ is the ionic charge number, $\(u_i\)$ is ionic mobility, $\(F\)$ is the Faraday constant, $\(\phi\)$ is electric potential, and $\(\mathbf{v}\)$ is fluid velocity where applicable.
 
 ---
@@ -176,8 +175,7 @@ i
 =
 i_0
 \left[
-\exp\left(\frac{\alpha_a F\eta}{RT}\right)
--
+\exp\left(\frac{\alpha_a F\eta}{RT}\right)-
 \exp\left(-\frac{\alpha_c F\eta}{RT}\right)
 \right]
 $$
