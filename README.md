@@ -141,12 +141,8 @@ where $\(c_i\)$ is the concentration of species $\(i\)$, $\(\mathbf{N}_i\)$ is i
 
 The ionic flux can be expressed as:
 
-```math
-\mathbf{N}_i
-=
--D_i\nabla c_i
--z_i u_i F c_i\nabla\phi
-+c_i\mathbf{v}
+```
+$$\mathbf{N}_i=-D_i\nabla c_i-z_i u_i F c_i\nabla\phi+c_i\mathbf{v}$$
 
 where $\(D_i\)$ is the diffusion coefficient, $\(z_i\)$ is the ionic charge number, $\(u_i\)$ is ionic mobility, $\(F\)$ is the Faraday constant, $\(\phi\)$ is electric potential, and $\(\mathbf{v}\)$ is fluid velocity where applicable.
 
