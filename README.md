@@ -142,14 +142,10 @@ where $\(c_i\)$ is the concentration of species $\(i\)$, $\(\mathbf{N}_i\)$ is i
 The ionic flux can be expressed as:
 
 ```
-$$
 \mathbf{N}_i=-D_i\nabla c_i-z_i u_i F c_i\nabla\phi+c_i\mathbf{v}
-$$
 
-where $\(D_i\)$ is the diffusion coefficient, $\(z_i\)$ is the ionic charge number, $\(u_i\)$ is ionic mobility, $\(F\)$ is the Faraday constant, $\(\phi\)$ is electric potential, and $\(\mathbf{v}\)$ is fluid velocity where applicable.
-
----
-
+where $D_i$ is the diffusion coefficient, $z_i$ is the ionic charge number, $u_i$ is ionic mobility, $F$ is the Faraday constant, $\phi$ is electric potential, and $\mathbf{v}$ is fluid velocity where applicable.
+```
 ###  Fick's Law of Diffusion
 
 The diffusive component of species transport is described by Fick's law:
@@ -166,10 +162,11 @@ Diffusion contributes to the redistribution of electrochemically generated speci
 
 ### Butler–Volmer Electrode Kinetics
 
+Butler–Volmer Electrode Kinetics
+
 Electrochemical reactions at the electrode–electrolyte interfaces are described using Butler–Volmer kinetics:
 
-```math
-i = i_0 \left[
+i=i_0\left[
 \exp\left(\frac{\alpha_a F\eta}{RT}\right)
 -
 \exp\left(-\frac{\alpha_c F\eta}{RT}\right)
@@ -177,13 +174,13 @@ i = i_0 \left[
 
 where:
 
-* $\(i\)$ = electrode current density
-* $\(i_0\)$ = exchange current density
-* $\(\eta\)$ = overpotential
-* $\(\alpha_a,\alpha_c\)$= anodic and cathodic charge-transfer coefficients
-* $\(F\)$ = Faraday constant
-* $\(R\)$ = universal gas constant
-* $\(T\)$ = absolute temperature
+$i$ = electrode current density
+$i_0$ = exchange current density
+$\eta$ = overpotential
+$\alpha_a,\alpha_c$ = anodic and cathodic charge-transfer coefficients
+$F$ = Faraday constant
+$R$ = universal gas constant
+$T$ = absolute temperature
 
 This formulation describes the rate of electrochemical reactions occurring at the electrode interfaces.
 
