@@ -116,7 +116,7 @@ The computational domain was discretized using an **unstructured triangular fini
 
 Local mesh refinement was applied near the **tumor and electrode regions**, where stronger spatial variations in electric potential, current density, and species concentration are expected.
 
-![Computational Mesh](../Figures/mesh.png)
+https://github.com/Zainab-Qadeer150/Mathematical-Modelling-of-Electrochemical-Treatment-for-Choroidal-Melanoma-using-COMSOL-Multiphysics/blob/main/Figures/mesh.png
 
 **Figure 2.** Unstructured triangular finite-element mesh used to discretize the computational domain.
 
