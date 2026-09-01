@@ -184,13 +184,13 @@ $$
 
 where:
 
-* \(i\) = electrode current density
-* \(i_0\) = exchange current density
-* \(\eta\) = overpotential
-* \(\alpha_a,\alpha_c\) = anodic and cathodic charge-transfer coefficients
-* \(F\) = Faraday constant
-* \(R\) = universal gas constant
-* \(T\) = absolute temperature
+* $\(i\)$ = electrode current density
+* $\(i_0\)$ = exchange current density
+* $\(\eta\)$ = overpotential
+* $\(\alpha_a,\alpha_c\)$= anodic and cathodic charge-transfer coefficients
+* $\(F\)$ = Faraday constant
+* $\(R\)$ = universal gas constant
+* $\(T\)$ = absolute temperature
 
 This formulation describes the rate of electrochemical reactions occurring at the electrode interfaces.
 
@@ -206,7 +206,7 @@ $$
 
 where:
 
-* \(n\) = amount of substance
+* $\(n\) = amount of substance
 * \(I\) = electric current
 * \(t\) = treatment time
 * \(z\) = number of electrons transferred
