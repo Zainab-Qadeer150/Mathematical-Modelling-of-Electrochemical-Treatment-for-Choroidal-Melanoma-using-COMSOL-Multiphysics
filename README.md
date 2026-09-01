@@ -99,7 +99,7 @@ $$
 \nabla \cdot \mathbf{J} = 0
 $$
 
-where \(\mathbf{J}\) is the current-density vector.
+where $\(\mathbf{J}\)$ is the current-density vector.
 
 This equation governs the conservation of electric charge within the computational domain and determines the resulting current distribution.
 
@@ -115,9 +115,9 @@ $$
 
 where:
 
-* \(\mathbf{J}\) = current density
-* \(\sigma\) = electrical conductivity
-* \(\mathbf{E}\) = electric field
+* $\(\mathbf{J}\)$ = current density
+* $\(\sigma\)$ = electrical conductivity
+* $\(\mathbf{E}\)$ = electric field
 
 The electric field is related to the electric potential by:
 
@@ -125,7 +125,7 @@ $$
 \mathbf{E} = -\nabla \phi
 $$
 
-where \(\phi\) represents the electric potential.
+where $\(\phi\)$ represents the electric potential.
 
 ---
 
@@ -137,7 +137,7 @@ $$
 \frac{\partial c_i}{\partial t}+\nabla\cdot\mathbf{N}_i=R_i
 $$
 
-where \(c_i\) is the concentration of species \(i\), \(\mathbf{N}_i\) is its flux, and \(R_i\) represents the corresponding reaction or source term.
+where $\(c_i\)$ is the concentration of species $\(i\)$, $\(\mathbf{N}_i\)$ is its flux, and $\(R_i\)$ represents the corresponding reaction or source term.
 
 The ionic flux can be expressed as:
 
@@ -149,7 +149,7 @@ $$
 +c_i\mathbf{v}
 $$
 
-where \(D_i\) is the diffusion coefficient, \(z_i\) is the ionic charge number, \(u_i\) is ionic mobility, \(F\) is the Faraday constant, \(\phi\) is electric potential, and \(\mathbf{v}\) is fluid velocity where applicable.
+where $\(D_i\)$ is the diffusion coefficient, $\(z_i\)$ is the ionic charge number, $\(u_i\)$ is ionic mobility, $\(F\)$ is the Faraday constant, $\(\phi\)$ is electric potential, and $\(\mathbf{v}\)$ is fluid velocity where applicable.
 
 ---
 
@@ -206,11 +206,11 @@ $$
 
 where:
 
-* $\(n\) = amount of substance
-* \(I\) = electric current
-* \(t\) = treatment time
-* \(z\) = number of electrons transferred
-* \(F\) = Faraday constant
+* $\(n\)$ = amount of substance
+* $\(I\)$ = electric current
+* $\(t\)$ = treatment time
+* $\(z\)$ = number of electrons transferred
+* $\(F\)$ = Faraday constant
 
 This provides a quantitative connection between the applied electrical treatment and electrochemical species generation.
 
@@ -224,7 +224,7 @@ $$
 \mathrm{pH}=-\log_{10}[H^+]
 $$
 
-where \([H^+]\) represents the hydrogen-ion concentration.
+where $\([H^+]\)$ represents the hydrogen-ion concentration.
 
 The resulting pH distribution provides a quantitative measure of the treatment-induced acidic or alkaline environment.
 
