@@ -103,7 +103,7 @@ Therefore, the present model is most appropriately considered a computational fr
 ## Key Finding
 
 > The coupled finite-element simulation shows the development of a **localized, spatially varying, and time-dependent pH environment** during the modeled electrochemical treatment, providing a quantitative framework for investigating treatment-induced electrochemical changes within the ocular domain.
-> ## Conclusion
+ ## Conclusion
 
 This project developed a **two-dimensional finite-element multiphysics model** to investigate the electrochemical treatment of choroidal melanoma using **COMSOL Multiphysics**. The model couples electrical behavior, electrochemical reactions, ionic transport, and pH evolution to characterize the treatment-induced electrochemical environment.
 
