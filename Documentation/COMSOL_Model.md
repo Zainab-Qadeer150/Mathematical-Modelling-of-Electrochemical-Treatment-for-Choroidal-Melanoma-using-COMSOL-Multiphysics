@@ -4,9 +4,9 @@ This section presents the computational implementation of the mathematical model
 
 ---
 
-##  Model Overview
+## Model Overview
 
-A **two-dimensional finite-element multiphysics model** was developed to simulate the treatment environment around the tumor.
+A **two-dimensional finite-element multiphysics model** was developed to simulate the electrochemical treatment environment around the tumor.
 
 The model combines:
 
@@ -16,7 +16,7 @@ The model combines:
 * Hydrogen-ion concentration
 * pH evolution
 
-The coupled formulation allows the spatial and temporal behavior of the electrochemical environment to be investigated under prescribed treatment conditions.
+The coupled formulation enables investigation of the **spatial and temporal evolution of the electrochemical environment** under prescribed treatment conditions.
 
 ---
 
@@ -26,15 +26,15 @@ The computational domain represents the relevant ocular environment, including t
 
 The choroidal melanoma is represented as a localized tumor domain in the posterior region of the modeled eye. The electrode configuration is incorporated into the geometry to represent the applied electrochemical treatment.
 
-Figures/Computational Geometry.png!
+https://github.com/Zainab-Qadeer150/Mathematical-Modelling-of-Electrochemical-Treatment-for-Choroidal-Melanoma-using-COMSOL-Multiphysics/blob/main/Figures/Computational%20Geometry.png?utm_source=chatgpt.com
 
 **Figure 1.** Two-dimensional computational geometry showing the modeled ocular environment, tumor region, and electrode configuration.
 
 ---
 
-##  Physics Interfaces
+## Physics Interfaces
 
-The model uses COMSOL Multiphysics to couple the electrical and species-transport processes.
+The model couples electrical and species-transport processes using two principal physics interfaces.
 
 ### Electric Currents (ec)
 
@@ -44,7 +44,7 @@ The **Electric Currents (ec)** interface is used to calculate:
 * Electric field
 * Current density
 
-These quantities describe the electrical response of the treatment domain.
+These quantities describe the electrical response of the computational domain under the applied treatment conditions.
 
 ### Transport of Diluted Species (tds)
 
@@ -54,13 +54,13 @@ The **Transport of Diluted Species (tds)** interface is used to model ionic spec
 * Electromigration
 * Species generation and consumption
 
-The resulting concentration fields are used to evaluate the treatment-induced chemical environment.
+The resulting concentration fields are used to investigate the treatment-induced changes in the local chemical environment.
 
 ---
 
-##  Multiphysics Coupling
+## Multiphysics Coupling
 
-The electrical and species-transport processes are coupled through the electric field and ionic migration.
+The electrical and species-transport processes are coupled through the interaction between the electric field and charged species.
 
 ```text
 Applied Electrical Conditions
@@ -76,51 +76,55 @@ H⁺ Concentration
 pH Distribution
 ```
 
-This coupling provides a unified computational framework for analyzing the interaction between electrical forcing, electrochemical reactions, and ionic transport.
+The applied electrical conditions generate an electric field that influences the migration of charged species. Together with diffusion and electrochemical reactions, this produces spatial and temporal changes in ionic concentrations and consequently in the local pH.
 
 ---
 
-## 5. Electrode Configuration
+## Electrode Configuration
 
-Electrodes provide the electrical input required to initiate the electrochemical treatment process.
+The electrodes provide the electrical input required to initiate the electrochemical treatment process.
 
 Their **position, geometry, and applied electrical conditions** influence the resulting electric potential, current-density distribution, and local electrochemical environment.
 
-Electrochemical boundary conditions were applied at the electrode–electrolyte interfaces according to the prescribed treatment configuration.
+Electrochemical boundary conditions were applied at the electrode–electrolyte interfaces to represent the prescribed treatment configuration.
 
 ---
 
-## 6. Initial and Boundary Conditions
+## Initial and Boundary Conditions
 
-The model was initialized with prescribed species concentrations representing the initial electrochemical state of the computational domain.
+Initial conditions were specified to represent the electrochemical state of the computational domain before treatment.
 
-Boundary conditions were applied to the electrodes and relevant domain boundaries to define the electrical and species-transport behavior.
+The initial concentrations of the modeled ionic species were prescribed, and the corresponding hydrogen-ion concentration was used to define the initial pH.
 
-Depending on the model formulation, these conditions include:
+Boundary conditions were applied to the electrode interfaces and external boundaries to define the electrical and species-transport behavior of the model.
 
-* Applied potential or current
-* Electrode reaction conditions
-* Species fluxes
-* No-flux boundaries
+The model includes:
+
+* Prescribed electrical conditions at the electrodes
+* Electrochemical reaction conditions at electrode interfaces
+* Species flux conditions
+* No-flux conditions at appropriate external boundaries
 * Initial species concentrations
 
-These conditions define the physical constraints required for the numerical simulation.
+These conditions provide the physical constraints required for solving the coupled electrochemical model.
 
 ---
 
-## 7. Mesh
+## Mesh and Discretization
 
-The computational domain was discretized using an **unstructured triangular mesh**.
+The computational domain was discretized using an **unstructured triangular finite-element mesh**.
 
-Local refinement was applied near the **tumor and electrode regions**, where stronger spatial variations in electric potential, current density, and species concentration are expected.
+Local mesh refinement was applied near the **tumor and electrode regions**, where stronger spatial variations in electric potential, current density, and species concentration are expected.
 
-![Computational Mesh](../Figures/Mesh.png)
+![Computational Mesh](../Figures/mesh.png)
 
-**Figure 2.** Unstructured triangular mesh used for the finite-element discretization of the computational domain.
+**Figure 2.** Unstructured triangular finite-element mesh used to discretize the computational domain.
+
+The refined mesh provides improved spatial resolution in regions where significant electrochemical gradients are expected.
 
 ---
 
-## 8. Study and Solver
+## Study and Solver
 
 A **time-dependent study** was performed to investigate the evolution of the electrochemical environment during treatment.
 
@@ -133,31 +137,32 @@ A **time-dependent study** was performed to investigate the evolution of the ele
 | Time stepping      | Automatic             |
 | Numerical method   | Finite Element Method |
 
-The simulation calculates the coupled electrochemical variables at successive time points, allowing the temporal evolution of ionic concentrations and pH to be analyzed.
+The numerical solver calculates the coupled electrochemical variables at successive time points, enabling analysis of the temporal evolution of ionic concentrations and pH throughout the treatment period.
 
 ---
 
-## 9. Model Outputs
+## Model Outputs
 
 The principal simulation outputs include:
 
-| Quantity               | Purpose                                            |
-| ---------------------- | -------------------------------------------------- |
-| **Electric Potential** | Analyze the electrical potential distribution      |
-| **Current Density**    | Examine the spatial distribution of current        |
-| **Ion Concentration**  | Investigate ionic transport                        |
-| **H⁺ Concentration**   | Evaluate treatment-induced hydrogen-ion changes    |
-| **pH Distribution**    | Characterize the local acidic/alkaline environment |
-| **Temporal Evolution** | Examine changes during treatment                   |
+| Quantity               | Purpose                                                          |
+| ---------------------- | ---------------------------------------------------------------- |
+| **Electric Potential** | Analyze the spatial electrical-potential distribution            |
+| **Electric Field**     | Examine the electrical field generated within the domain         |
+| **Current Density**    | Investigate the spatial distribution of electrical current       |
+| **Ion Concentration**  | Analyze ionic transport within the computational domain          |
+| **H⁺ Concentration**   | Evaluate treatment-induced changes in hydrogen-ion concentration |
+| **pH Distribution**    | Characterize the resulting acidic and alkaline regions           |
+| **Temporal Evolution** | Investigate changes throughout the treatment period              |
 
-These outputs form the basis for the **Simulation Results and Analysis** presented in the next section of the repository.
+These outputs provide the basis for evaluating the **spatial and temporal electrochemical response** generated during the simulated treatment.
 
 ---
 
 ## Summary
 
-The COMSOL Multiphysics model provides a **finite-element computational framework** for studying the electrical, electrochemical, and ionic transport processes associated with electrochemical treatment of choroidal melanoma.
+The COMSOL Multiphysics model provides a **finite-element computational framework** for investigating the coupled electrical, electrochemical, and ionic transport processes associated with electrochemical treatment of choroidal melanoma.
 
-The model integrates the **computational geometry, electrode configuration, coupled physics, mesh, and time-dependent simulation** to investigate the resulting electrochemical environment around the tumor.
+The model integrates the **computational geometry, electrode configuration, coupled physics, boundary conditions, finite-element mesh, and time-dependent simulation** to investigate the resulting electrochemical environment around the tumor.
 
-The next section presents the **simulation results and their analysis**.
+The simulation outputs are subsequently used to analyze the **spatial distribution and temporal evolution of pH and related electrochemical quantities** during treatment.
