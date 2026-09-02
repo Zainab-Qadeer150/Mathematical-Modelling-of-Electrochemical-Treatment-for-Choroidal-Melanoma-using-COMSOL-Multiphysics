@@ -22,7 +22,7 @@ The study provides a computational framework for investigating how treatment con
 
 Choroidal melanoma is a malignant tumor [8] that arising from melanocytes within the **choroid**, the vascular layer located at the back of the eye [1].
 
-Effective treatment requires tumor control while minimizing damage to surrounding ocular structures. Established approaches include **plaque brachytherapy, proton beam therapy, laser-based treatments, and surgery**, with treatment-related challenges depending on tumor characteristics and clinical conditions [12].
+Effective treatment requires tumor control while minimizing damage to surrounding ocular structures [18]. Established approaches include **plaque brachytherapy, proton beam therapy, laser-based treatments, and surgery**, with treatment-related challenges depending on tumor characteristics and clinical conditions [12].
 
 This project investigates **electrochemical treatment as a computationally studied minimally invasive approach**, focusing on the underlying electrochemical and transport processes [3].
 
