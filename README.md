@@ -20,7 +20,7 @@ The study provides a computational framework for investigating how treatment con
 
 ### Choroidal Melanoma
 
-Choroidal melanoma is a malignant tumor arising from melanocytes within the **choroid**, the vascular layer located at the back of the eye.
+Choroidal melanoma is a malignant tumor arising from melanocytes within the **choroid**, the vascular layer located at the back of the eye[1].
 
 Effective treatment requires tumor control while minimizing damage to surrounding ocular structures. Established approaches include **plaque brachytherapy, proton beam therapy, laser-based treatments, and surgery**, with treatment-related challenges depending on tumor characteristics and clinical conditions.
 
