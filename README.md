@@ -152,7 +152,7 @@ This equation describes the change in ionic-species concentration due to transpo
 
 ### Nernst–Planck Equation
 
-The transport of ionic species is described using the Nernst–Planck equation, which accounts for diffusion and electric-field-driven migration.
+The transport of ionic species is described using the Nernst–Planck equation, which accounts for diffusion and electric-field-driven migration [7].
 
 ```math
 \mathbf{N}_i
