@@ -60,7 +60,7 @@ https://github.com/Zainab-Qadeer150/Mathematical-Modelling-of-Electrochemical-Tr
 
 ## Interpretation of Simulation Results
 
-The numerical results demonstrate that the modeled electrochemical treatment produces a **spatially non-uniform pH response** within the ocular computational domain.
+The numerical results demonstrate that the modeled electrochemical treatment produces a **spatially non-uniform pH response** within the ocular computational domain [7].
 
 Three principal observations can be drawn from the simulation:
 
