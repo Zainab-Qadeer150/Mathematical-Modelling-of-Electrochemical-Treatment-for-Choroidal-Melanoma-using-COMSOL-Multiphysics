@@ -20,17 +20,17 @@ The study provides a computational framework for investigating how treatment con
 
 ### Choroidal Melanoma
 
-Choroidal melanoma is a malignant tumor arising from melanocytes within the **choroid**, the vascular layer located at the back of the eye[1].
+Choroidal melanoma is a malignant tumor arising from melanocytes within the **choroid**, the vascular layer located at the back of the eye [1].
 
 Effective treatment requires tumor control while minimizing damage to surrounding ocular structures. Established approaches include **plaque brachytherapy, proton beam therapy, laser-based treatments, and surgery**, with treatment-related challenges depending on tumor characteristics and clinical conditions.
 
-This project investigates **electrochemical treatment as a computationally studied minimally invasive approach**, focusing on the underlying electrochemical and transport processes.
+This project investigates **electrochemical treatment as a computationally studied minimally invasive approach**, focusing on the underlying electrochemical and transport processes [3].
 
 ---
 
 ## Electrochemical Treatment (EChT)
 
-Electrochemical treatment applies a **low direct electric current through electrodes** positioned around or within the treatment region. The resulting electrochemical reactions alter the local chemical environment and produce changes in **ionic concentrations and pH**.
+Electrochemical treatment applies a **low direct electric current through electrodes** positioned around or within the treatment region[3]. The resulting electrochemical reactions alter the local chemical environment and produce changes in **ionic concentrations and pH**.
 
 These treatment-induced electrochemical changes provide the physical basis for investigating localized effects within the tumor region while studying the surrounding electrochemical environment computationally.
 
@@ -54,7 +54,7 @@ Electrochemical Treatment Environment
 
 ## Research Motivation
 
-The motivation of this work is to establish a **mathematical and computational framework for studying the electrochemical processes associated with EChT of choroidal melanoma**.
+The motivation of this work is to establish a **mathematical and computational framework for studying the electrochemical processes associated with EChT of choroidal melanoma** [2].
 
 Rather than replacing established clinical treatments, this study aims to provide **quantitative insight into the relationship between applied treatment conditions and the resulting electrochemical response**.
 
@@ -89,7 +89,7 @@ The main objectives of this project are to:
 
 The electrochemical treatment model is formulated as a coupled mathematical framework describing the interaction between **electric-field distribution, ionic transport, diffusion, electrode reactions, and hydrogen-ion concentration**.
 
-The governing equations are implemented in **COMSOL Multiphysics** using the **Finite Element Method (FEM)** to investigate the spatial and temporal evolution of the electrochemical environment.
+The governing equations are implemented in **COMSOL Multiphysics** using the **Finite Element Method (FEM)** to investigate the spatial and temporal evolution of the electrochemical environment [5].
 
 ### Charge Conservation
 
@@ -251,7 +251,7 @@ The local pH is calculated from the hydrogen-ion concentration:
 
 where $[H^+]$ represents the hydrogen-ion concentration.
 
-Changes in hydrogen-ion concentration lead to local variations in pH during electrochemical treatment. Therefore, the pH distribution provides an important quantitative measure of the treatment-induced acidic or alkaline environment.
+Changes in hydrogen-ion concentration lead to local variations in pH during electrochemical treatment [6]. Therefore, the pH distribution provides an important quantitative measure of the treatment-induced acidic or alkaline environment.
 
 ---
 
