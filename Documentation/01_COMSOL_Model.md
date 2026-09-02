@@ -22,7 +22,7 @@ The coupled formulation enables investigation of the **spatial and temporal evol
 
 ## Computational Geometry
 
-The computational domain represents the relevant ocular environment, including the **tumor region, surrounding tissue/electrolyte regions, and electrodes**.
+The computational domain represents the relevant ocular environment, including the **tumor region, surrounding tissue/electrolyte regions, and electrodes [9]**.
 
 The choroidal melanoma is represented as a localized tumor domain in the posterior region of the modeled eye. The electrode configuration is incorporated into the geometry to represent the applied electrochemical treatment.
 
