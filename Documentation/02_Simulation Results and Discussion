@@ -34,7 +34,7 @@ The contour representation provides a complementary view of the spatial pH distr
 
 The contour lines clearly identify the localized low-pH region and the progressive change in pH moving away from this region. In the displayed contour result, pH values range from approximately **2.04 to 6.873**.
 
-![pH Contour Distribution](../Figures/pH_Contour.png)
+https://github.com/Zainab-Qadeer150/Mathematical-Modelling-of-Electrochemical-Treatment-for-Choroidal-Melanoma-using-COMSOL-Multiphysics/blob/main/Figures/pH%20contour%20plot.png
 
 **Figure 4.** Contour distribution of pH within the modeled ocular domain at **1200 s**.
 
