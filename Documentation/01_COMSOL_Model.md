@@ -1,6 +1,6 @@
 # COMSOL Multiphysics Model
 
-This section presents the computational implementation of the mathematical model using **COMSOL Multiphysics**. The model was developed to investigate the coupled electrical and electrochemical processes associated with electrochemical treatment of choroidal melanoma.
+This section presents the computational implementation of the mathematical model using **COMSOL Multiphysics** [4]. The model was developed to investigate the coupled electrical and electrochemical processes associated with electrochemical treatment of choroidal melanoma.
 
 ---
 
