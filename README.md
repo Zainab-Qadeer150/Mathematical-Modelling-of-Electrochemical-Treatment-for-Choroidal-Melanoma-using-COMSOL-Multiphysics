@@ -213,7 +213,7 @@ where:
 * $R$ = universal gas constant
 * $T$ = absolute temperature
 
-This formulation describes the rate of electrochemical reactions occurring at the electrode–electrolyte interfaces.
+This formulation describes the rate of electrochemical reactions occurring at the electrode–electrolyte interfaces [14].
 
 ---
 
@@ -251,7 +251,7 @@ The local pH is calculated from the hydrogen-ion concentration:
 
 where $[H^+]$ represents the hydrogen-ion concentration.
 
-Changes in hydrogen-ion concentration lead to local variations in pH during electrochemical treatment [16]. Therefore, the pH distribution provides an important quantitative measure of the treatment-induced acidic or alkaline environment.
+Changes in hydrogen-ion concentration lead to local variations in pH during electrochemical treatment [15]. Therefore, the pH distribution provides an important quantitative measure of the treatment-induced acidic or alkaline environment.
 
 ---
 
