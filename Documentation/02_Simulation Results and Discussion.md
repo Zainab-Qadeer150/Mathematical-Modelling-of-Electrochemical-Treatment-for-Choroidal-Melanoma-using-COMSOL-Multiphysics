@@ -78,7 +78,7 @@ The surface and contour plots therefore provide complementary representations of
 
 This work provides a **mathematical and computational framework** for investigating the electrochemical environment generated during the modeled treatment of choroidal melanoma.
 
-By coupling electrical behavior, electrochemical reactions, ionic transport, and pH evolution within a finite-element multiphysics framework, the model enables the treatment-induced chemical response to be investigated both **spatially and temporally**.
+By coupling electrical behavior, electrochemical reactions, ionic transport, and pH evolution within a finite-element multiphysics framework, the model enables the treatment-induced chemical response to be investigated both **spatially and temporally** [16].
 
 A key advantage of the computational approach is its ability to identify localized regions of stronger pH alteration and examine how these regions evolve during treatment. The framework also provides a basis for future computational studies involving:
 
@@ -92,7 +92,7 @@ A key advantage of the computational approach is its ability to identify localiz
 
 ## Limitations
 
-The results should be interpreted as **numerical predictions of the modeled electrochemical environment** rather than direct evidence of clinical treatment efficacy.
+The results should be interpreted as **numerical predictions of the modeled electrochemical environment** rather than direct evidence of clinical treatment efficacy [17].
 
 The predicted pH distributions depend on the mathematical assumptions, material properties, boundary conditions, electrochemical parameters, geometry, and numerical implementation used in the model.
 
