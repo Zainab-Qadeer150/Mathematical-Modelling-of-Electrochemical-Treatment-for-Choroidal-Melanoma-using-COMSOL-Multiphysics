@@ -1,7 +1,7 @@
 # **References** 
--
+
 The following references provide the scientific and mathematical background for the clinical context, electrochemical treatment, ionic transport, pH modelling, and computational methods used in this project. 
----
+
 Singh, P., & Singh, A. J. (2012). Choroidal melanoma. 5(1), 3–9. 
 
 Kivelä, T., & Kujala, E. (2016). Long-term risk of melanoma-related mortality after uveal melanoma. JAMA Ophthalmology, 134(2), 238–239. 
