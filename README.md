@@ -20,9 +20,9 @@ The study provides a computational framework for investigating how treatment con
 
 ### Choroidal Melanoma
 
-Choroidal melanoma is a malignant tumor arising from melanocytes within the **choroid**, the vascular layer located at the back of the eye [1].
+Choroidal melanoma is a malignant tumor [8] that arising from melanocytes within the **choroid**, the vascular layer located at the back of the eye [1].
 
-Effective treatment requires tumor control while minimizing damage to surrounding ocular structures. Established approaches include **plaque brachytherapy, proton beam therapy, laser-based treatments, and surgery**, with treatment-related challenges depending on tumor characteristics and clinical conditions.
+Effective treatment requires tumor control while minimizing damage to surrounding ocular structures. Established approaches include **plaque brachytherapy, proton beam therapy, laser-based treatments, and surgery**, with treatment-related challenges depending on tumor characteristics and clinical conditions [12].
 
 This project investigates **electrochemical treatment as a computationally studied minimally invasive approach**, focusing on the underlying electrochemical and transport processes [3].
 
@@ -30,7 +30,7 @@ This project investigates **electrochemical treatment as a computationally studi
 
 ## Electrochemical Treatment (EChT)
 
-Electrochemical treatment applies a **low direct electric current through electrodes** positioned around or within the treatment region[3]. The resulting electrochemical reactions alter the local chemical environment and produce changes in **ionic concentrations and pH**.
+Electrochemical treatment applies a **low direct electric current through electrodes** positioned around or within the treatment region[3]. The resulting electrochemical reactions alter the local chemical environment and produce changes in **ionic concentrations and pH**[6].
 
 These treatment-induced electrochemical changes provide the physical basis for investigating localized effects within the tumor region while studying the surrounding electrochemical environment computationally.
 
@@ -152,7 +152,7 @@ This equation describes the change in ionic-species concentration due to transpo
 
 ### Nernst–Planck Equation
 
-The transport of ionic species is described using the Nernst–Planck equation, which accounts for diffusion and electric-field-driven migration [7].
+The transport of ionic species is described using the Nernst–Planck equation, which accounts for diffusion and electric-field-driven migration [7], [15].
 
 ```math
 \mathbf{N}_i
@@ -251,7 +251,7 @@ The local pH is calculated from the hydrogen-ion concentration:
 
 where $[H^+]$ represents the hydrogen-ion concentration.
 
-Changes in hydrogen-ion concentration lead to local variations in pH during electrochemical treatment [6]. Therefore, the pH distribution provides an important quantitative measure of the treatment-induced acidic or alkaline environment.
+Changes in hydrogen-ion concentration lead to local variations in pH during electrochemical treatment [16]. Therefore, the pH distribution provides an important quantitative measure of the treatment-induced acidic or alkaline environment.
 
 ---
 
